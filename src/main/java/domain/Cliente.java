@@ -34,4 +34,15 @@ public class Cliente extends Persona{
     public void setVip(boolean vip) {
         this.vip = vip;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Cliente{");
+        sb.append("idCliente=").append(idCliente);
+        sb.append(", fechaRegistro=").append(fechaRegistro);
+        sb.append(", vip=").append(vip);
+        sb.append(", ").append(super.toString());
+        sb.append('}');
+        return sb.toString();
+    }
 }
